@@ -8,7 +8,7 @@ int main(void)
     TYPE shortV = createShort(5);
     printf("%d\n", *((short *) (shortV)) );
 
-    TYPE integer = createInteger(5);
+    TYPE integer = createInteger(56);
     printf("%d\n", *((int *) (integer)) );
 
     TYPE floatV = createFloat(5.236);
@@ -28,12 +28,14 @@ int main(void)
     TYPE string = createString(str);
     printf("%s\n",str);
 
+
     deleteDataUnit(shortV);
     deleteDataUnit(integer);
     deleteDataUnit(floatV);
     deleteDataUnit(doubleV);
-    deleteDataUnit(character);  
+    deleteDataUnit(character);
     deleteDataUnit(string);
     deleteDataUnit(vector2D);
+
     return 0;
 }
